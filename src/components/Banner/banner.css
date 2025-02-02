@@ -1,0 +1,121 @@
+/************ Banner Css ************/
+
+.banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url("../../assets/img/banner-bg.png");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(
+    90.21deg,
+    rgba(170, 54, 124, 0.5) -5.91%,
+    rgba(74, 47, 189, 0.5) 111.58%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.banner h1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  display: block;
+}
+.banner .typed-text {
+  height: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.banner p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+  text-align: justify;
+}
+.banner a {
+  color: #fff;
+  padding: 0 25px;
+  font-weight: 400%;
+  font-size: 20px;
+  line-height: 4px;
+  background-position: 80%;
+  margin-top: 60px;
+  border-style: 1px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  opacity: 0.75;
+}
+.banner a {
+  font-size: 22px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.banner a:hover {
+  margin-left: 25px;
+  font-size: 30px;
+}
+
+.cursor {
+  animation-name: blink;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+.banner img {
+  animation: updown 3s linear infinite;
+  width: 100%;
+}
+.txt-rotate > .wrap {
+  border-right: solid #666;
+  min-height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner button {
+    padding-top: 5px !important;
+    margin-bottom: 50px !important;
+  }
+  .banner {
+    margin-bottom: 50px !important;
+    padding: 288px 0 33px 0;
+  }
+}
