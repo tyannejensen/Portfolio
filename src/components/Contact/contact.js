@@ -143,9 +143,20 @@ export const Contact = () => {
                             onFormUpdate("message", e.target.value)
                           }
                         />
-                        <button type="submit">
-                          <span>{buttonText}</span>
-                        </button>
+                        <div className="buttons-container">
+                          <button type="submit">
+                            <span>{buttonText}</span>
+                          </button>
+                          <a
+                            className="styled-button"
+                            href={process.env.PUBLIC_URL + "/Resume.pdf"}
+                            download
+                          >
+                            <div>
+                              <span>Resume</span>
+                            </div>
+                          </a>
+                        </div>
                       </Col>
                       <Col>
                         {status.message && (

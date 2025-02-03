@@ -80,6 +80,9 @@
   width: 90vw;
 }
 
+.buttons-container {
+  display: flex;
+}
 @media only screen and (max-width: 768px) {
   .contact img {
     width: 100%;
