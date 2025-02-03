@@ -4,7 +4,7 @@ import { Skills } from "./components/Skills/skills.js";
 import { Projects } from "./components/Projects/projects.js";
 import { Contact } from "./components/Contact/contact.js";
 import { Footer } from "./components/Footer/footer.js";
-import "./app.css";
+import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
